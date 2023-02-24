@@ -2,10 +2,12 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+//declarar carta inicial
+const Card = { symbol: null, value: null };
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+function getInicialCard() {}
+//obtener numero aleatorio entre 1 y 12
+//obtener el palo aleatoriamente
+//cambiar el estado de tarjeta
+//mostrar en html la nueva tarjeta
+const card = [];
