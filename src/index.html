@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -15,13 +15,15 @@
   <body style="background-color: green;">
     <div class="container justify-content-center d-flex my-5">
       <div class="card bg-white w-25 h-100">
-        <div class="row mx-3">palo</div>
-        <div class="row justify-content-center ">numero</div>
-        <div class="row justify-content-end mx-3">palo</div>
+        <div class="row mx-3"><h1 id="Ramdomsymbol"></h1></div>
+        <div class="row justify-content-center ">número</div>
+        <div class="row justify-content-end mx-3">
+          simbolo repe
+        </div>
       </div>
       <button
         class="btn btn-secondary fixed-bottom mx-5 my-5"
-        onclick="getCard()"
+        onclick="getRandomSymbol()"
       >
         <strong>Give me a card</strong>
       </button>

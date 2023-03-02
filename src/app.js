@@ -2,14 +2,17 @@
 import "bootstrap";
 import "./style.css";
 
-//declarar carta inicial
-const symbol = ["❤️", "♦️", "♠︎", "♣️"];
 const value = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "🤴🏼", "👸🏼", "J"];
-const Card = { symbol: null, value: null };
+const symbols = ["❤️", "♦️", "♠︎", "♣️"];
 
-function getCard() {}
-//obtener numero aleatorio entre 1 y 12
-//obtener el palo aleatoriamente
-//cambiar el estado de tarjeta
-//mostrar en html la nueva tarjeta
-const card = [];
+const generateSymbol = symbols => {
+  const randomIndex = Math.floor(Math.random() * symbols.length);
+  return symbols[randomIndex];
+};
+
+const getRandomSymbol = () => {
+  const excuse = generateSymbol(symbols);
+  document.getElementById("Ramdomsymbol").innerHTML = excuse;
+};
+
+getRandomSymbol();
