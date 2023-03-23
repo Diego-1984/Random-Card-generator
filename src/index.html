@@ -10,23 +10,30 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body style="background-color: green;">
+  <body style="background-color: green; ">
     <div class="container justify-content-center d-flex my-5">
-      <div class="card bg-white w-25 h-100">
-        <div class="row mx-3"><h1 id="Ramdomsymbol"></h1></div>
-        <div class="row justify-content-center ">número</div>
+      <div class="card bg-white w-25 d-flex" style="height: 400px;">
+        <div class="row mx-3 my-3" style="height: 75px ;">
+          <h1 id="Ramdomsymbol"></h1>
+        </div>
+        <div
+          class="row"
+          style="height: 250px; align-items: center; justify-content: center;"
+        >
+          <h1 id="Ramdomvalue"></h1>
+        </div>
+
         <div class="row justify-content-end mx-3">
-          simbolo repe
+          <h1 id="Ramdomsymbol"></h1>
         </div>
       </div>
-      <button
-        class="btn btn-secondary fixed-bottom mx-5 my-5"
-        onclick="getRandomSymbol()"
-      >
-        <strong>Give me a card</strong>
-      </button>
     </div>
+    <button
+      class="btn btn-secondary fixed-bottom mx-5 my-5"
+      onclick="getRandomSymbol()"
+    >
+      <strong>Give me a card</strong>
+    </button>
   </body>
 </html>
