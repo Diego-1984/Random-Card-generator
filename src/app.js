@@ -13,6 +13,7 @@ const generateSymbol = symbols => {
 const getRandomSymbol = () => {
   const symbol = generateSymbol(symbols);
   document.getElementById("Ramdomsymbol").innerHTML = symbol;
+  document.getElementById("Ramdomsymbol2").innerHTML = symbol;
 };
 
 getRandomSymbol();
