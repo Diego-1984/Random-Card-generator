@@ -2,8 +2,8 @@
 import "bootstrap";
 import "./style.css";
 
-const values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "🤴🏼", "👸🏼", "J"];
-const symbols = ["♥", "♦", "♠︎", "♣️"];
+const values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+const symbols = ["❤️", "💎", "☘️", "♠"];
 
 const generateSymbol = symbols => {
   const randomIndex = Math.floor(Math.random() * symbols.length);
